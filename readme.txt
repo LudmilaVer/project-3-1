@@ -1,14 +1,36 @@
-Проект: Социальная сеть с возможностью регистрации, редактирования постов профилей пользователей
-и функция Like постов других пользователей
+TS-Projec 3-1
+
+Backend:
+npm init -y
+npm install express dotenv mongoose cors
+
+Frontend:
+vite
+1. установка пакета vite:
+npm create vite@latest
+2. переход в папку с проектом
+3. установка зависимостей:
+npm install
+4. запуск проекта:
+npm run dev
+5. сборка файлов для публикации:
+npm run build
+
+
+npm install axios
+
+
+Навигация:
+http://localhost:5173
+http://localhost:5173/login
+http://localhost:5173/posts
+
+
+
 
 Frontend (client)
 
--dependencies ? 
 
--routes (react-router-dom)
-    -login
-    -profile
-    -posts
 
 Backend
 
@@ -16,18 +38,25 @@ Backend
     - index.js файл Применяется для соединения Backend API -> MongoDB
 --models
     - User - Schema (описание сущности) + Model (Обьект взаимодействия с коллекцией User)
-    - Profile - Schema
-    - Posts - Schema () 
     - Transaction - - Schema (описание сущности) + Model (Обьект взаимодействия с коллекцией Transaction)
 --routes
     - balanceRouter - url + '/set-balance'
     - userRouter    - url + '/create'
-    - authRouter    - url + '/auth' и '/register'
-    - postRouter    - url + '/posts' и '/like'
 
 
-// Социальная сеть
-// Front end - Back end ???
 
-1. Продумать сущности и структуру базы данных
 
+Frontend (client)
+
+
+
+Backend
+
+--db
+    - index.js файл Применяется для соединения Backend API -> MongoDB
+--models
+    - User - Schema (описание сущности) + Model (Обьект взаимодействия с коллекцией User)
+    - Transaction - - Schema (описание сущности) + Model (Обьект взаимодействия с коллекцией Transaction)
+--routes
+    - balanceRouter - url + '/set-balance'
+    - userRouter    - url + '/create'
